@@ -1,7 +1,5 @@
 # **Prompt Inject Detection with Generative Explanation**
 
-## **🛠 Step 1: Skim for the Big Picture**
-
 ### ✅ **Title:**
 **Prompt Inject Detection with Generative Explanation as an Investigative Tool**
 
