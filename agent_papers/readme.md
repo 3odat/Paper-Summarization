@@ -1,7 +1,5 @@
 # **Prompt Inject Detection with Generative Explanation**
 
-### ✅ **Title:**
-**Prompt Inject Detection with Generative Explanation as an Investigative Tool**
 
 ### ✅ **Abstract:**
 Large Language Models (LLMs) are susceptible to **prompt injection attacks**, which can manipulate or exploit model vulnerabilities, leading to unintended responses such as **jailbreaking, malicious outputs, or security breaches**. The challenge in investigating these attacks arises due to the **sheer volume of input prompts**, many of which are benign, and the **contextual subjectivity** of adversarial prompts.
