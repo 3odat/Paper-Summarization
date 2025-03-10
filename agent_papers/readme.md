@@ -1,4 +1,4 @@
-# **Research Paper Summary: Prompt Inject Detection with Generative Explanation**
+# **Prompt Inject Detection with Generative Explanation**
 
 ## **🛠 Step 1: Skim for the Big Picture**
 
