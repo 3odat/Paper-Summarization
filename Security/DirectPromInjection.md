@@ -11,7 +11,7 @@
 ## **2️⃣ Abstract Summary (🔎 Quick Insight)**
 > **RTBAS (Robust Tool-Based Agent Systems) is a security framework for defending LLM-based agents against prompt injection attacks and privacy leaks.** By introducing **information flow control** and **dependency screening mechanisms**, RTBAS selectively executes tool calls while preserving system integrity. The approach utilizes **LM-Judge Screening** and **Attention-Based Screening** to detect and mitigate prompt injections. **Evaluation on the AgentDojo benchmark shows RTBAS prevents all targeted attacks with only 2% loss of task utility.**
 
-![Figure 1](add image path here)
+![Figure 1: Example of Prompt Injection Attack](add image path here)
 
 ---
 
@@ -23,7 +23,7 @@
   - **Privacy Leaks in TBAS:** Sensitive information can **unintentionally propagate** through tool responses.
   - **Existing Defenses:** OpenAI’s GPTs enforce **manual confirmations**, which are inefficient and burdensome.
 
-![Figure 2](add image path here)
+![Figure 2: Overview of RTBAS Framework](add image path here)
 
 ---
 
@@ -35,7 +35,7 @@
 ✅ **Selective Execution:** Automatically **blocks high-risk tool calls** while allowing safe interactions.  
 ✅ **Comprehensive Benchmarking:** Outperforms **existing methods** in real-world adversarial settings.
 
-![Figure 3](add image path here)
+![Figure 3: Information Flow Control for RTBAS](add image path here)
 
 ---
 
@@ -53,7 +53,7 @@
   - **LM-Judge Method:** Uses a secondary LLM for dependency reasoning.
   - **Attention-Based Approach:** Uses **saliency analysis** to filter relevant tool calls.
 
-![Figure 4](add image path here)
+![Figure 4: Distribution of Attention Scores](add image path here)
 
 ---
 
@@ -63,7 +63,7 @@
 - **🔵 98% Task Utility Maintained:** Minimal disruption to normal agent operations.
 - **🟡 Low False Positives (FPR < 8%)**: RTBAS avoided excessive user confirmations.
 
-![Figure 5](add image path here)
+![Figure 5: Experimental Setup Using AgentDojo](add image path here)
 
 ### **📊 Figures & Tables:**
 | **Method** | **Integrity (↑)** | **Utility (↑)** | **False Positives (↓)** |
@@ -85,7 +85,7 @@
 ❌ **Computational Overhead:** Requires **additional model inference** for screening.  
 ❌ **Policy Sensitivity:** Effectiveness **depends on predefined security labels.**  
 
-![Figure 6](add image path here)
+![Figure 6: Security-Utility Tradeoff for RTBAS](add image path here)
 
 ---
 
@@ -94,7 +94,7 @@
 - **🤖 Autonomous Agents:** Ensures safe **decision-making in AI-driven automation** (e.g., **automated banking, booking, or HR tools**).
 - **🔍 Privacy-Preserving AI:** Prevents **unintended information leakage** in chatbots, voice assistants, and enterprise AI platforms.
 
-![Figure 7](add image path here)
+![Figure 7: RTBAS Use Cases in Real-World Scenarios](add image path here)
 
 ---
 
@@ -104,6 +104,6 @@
 - **Adapting the framework for AI-driven cyber defenses** against adversarial inputs.
 - **Exploring more efficient dependency screening techniques** to reduce computational cost.
 
-![Figure 8](add image path here)
+![Figure 8: Performance of Dependency Screening Approaches](add image path here)
 
 ---
