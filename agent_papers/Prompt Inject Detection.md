@@ -1,102 +1,103 @@
-# **Prompt Inject Detection with Generative Explanation**
+# **Adaptive Attacks Break Defenses Against Indirect Prompt Injection**
 
+## **🛠 Step 1: Skim for the Big Picture**
+
+### ✅ **Title:**
+**Adaptive Attacks Break Defenses Against Indirect Prompt Injection Attacks on LLM Agents**
 
 ### ✅ **Abstract:**
-Large Language Models (LLMs) are susceptible to **prompt injection attacks**, which can manipulate or exploit model vulnerabilities, leading to unintended responses such as **jailbreaking, malicious outputs, or security breaches**. The challenge in investigating these attacks arises due to the **sheer volume of input prompts**, many of which are benign, and the **contextual subjectivity** of adversarial prompts.
+LLM agents leverage external tools to interact with environments, but this exposes them to **Indirect Prompt Injection (IPI) attacks**. While several defenses have been proposed to counteract these attacks, their **robustness is questionable against adaptive attacks**. This study evaluates eight defenses and systematically **bypasses all of them** using adaptive attack strategies, demonstrating a **success rate exceeding 50%**. The findings highlight the **need for rigorous adaptive attack testing** to ensure the reliability of defenses in real-world deployments.
 
-This research proposes **using an LLM-based system to not only detect prompt injections but also generate explanations for detections**, helping AI security investigators **triage and analyze** malicious inputs. The study explores **fine-tuning LLMs** to improve detection and explanation accuracy.
-
-### ✅ **Figures & Tables:**
-- **Comparison of model performance** using different fine-tuning techniques.
-- **Evaluation of adversarial prompt detection** using **ToxicChat dataset**.
-- **Manual evaluation of generated explanations** for clarity, bias, and correctness.
+![Defenses vs. Adaptive Attacks](images/figure1_defenses_vs_adaptive_attacks.png)
 
 ### ✅ **Conclusion:**
-The study finds that **fine-tuned LLMs** significantly improve the detection of adversarial prompts. Moreover, **LLMs can generate useful explanations**, aiding AI security investigators in understanding and handling **prompt injection attacks**. The research concludes that such tools can enhance **cybersecurity analysis** and suggests future work on **output censorship detection and improving explanation quality**.
+- **All tested defenses fail against adaptive attacks.**
+- **Adaptive attacks remain highly effective (success rates > 50%)** even against advanced defenses.
+- **Future defenses should incorporate adaptive attack considerations to improve resilience.**
 
 ---
 
 ## **📌 Step 2: Read the Key Sections in Detail**
 
 ### 🔹 **Introduction – Why is this research necessary?**
-- **LLMs are vulnerable** to **prompt injection attacks**, where attackers craft **malicious prompts** to bypass safeguards.
-- These attacks can cause **hallucinations, data leaks, or generate harmful content**.
-- Existing **guardrails (e.g., signature-based, ML-based)** focus on detection but **lack explanation** mechanisms.
-- This research explores using **text-generation LLMs** to **both detect** adversarial prompts and **generate explanations**, improving AI security investigations.
+- **LLM agents** use external tools, increasing their attack surface.
+- **Indirect Prompt Injection (IPI) attacks** manipulate external data sources to control LLM behavior.
+- **Existing defenses (e.g., fine-tuned detectors, input isolation, adversarial training) fail against adaptive attacks.**
+- **This research evaluates IPI defenses under adaptive attacks to expose vulnerabilities.**
+
+![LLM Agent Vulnerabilities](images/figure2_llm_agent_vulnerabilities.png)
 
 ---
-![Alt Text](.jpg)
+
 ### 🔹 **Methodology – How was this done?**
 
-#### **1️⃣ Dataset Selection**
-- **ToxicChat Dataset**: A benchmark dataset containing:
-  - **Benign prompts**
-  - **Toxic prompts**
-  - **Jailbreaking prompts** (attacks to override LLM safeguards)
+#### **1️⃣ Defense Strategies Evaluated**
+1. **Detection-Based**
+   - Fine-tuned detectors
+   - LLM-based classifiers
+   - Perplexity filtering
+2. **Input-Level Protections**
+   - Instructional prevention
+   - Data prompt isolation
+   - Sandwich prevention
+   - Paraphrasing adversarial prompts
+3. **Model-Level Protections**
+   - Adversarial fine-tuning
 
-#### **2️⃣ LLM-Based Guardrails with Explanation**
-- **Llama3.2 (1B and 3B models) from Meta** were used.
-- Models were **fine-tuned using**:
-  - **Supervised Fine-Tuning (SFT)**
-  - **Direct Preference Optimization (DPO)**
-  - **Low-Rank Adaptation (LoRA)**
+#### **2️⃣ Adaptive Attack Techniques**
+- **Greedy Coordinate Gradient (GCG):** Generates adversarial strings that exploit weaknesses in LLM decision-making.
+- **Multi-objective GCG (M-GCG):** Optimizes for both adversarial success and detection avoidance.
+- **Two-stage GCG (T-GCG):** Designed to break paraphrasing defenses.
+- **AutoDAN:** Generates stealthy, high-perplexity adversarial strings.
 
-#### **3️⃣ Experimental Setup**
-- Evaluated **prompt detection accuracy** using:
-  - **ToxicChat dataset** (known benign/adversarial prompts)
-  - **Garak (Nvidia’s adversarial LLM testing tool)**
-- **Generated explanations manually evaluated** for:
-  - **Listing contributing factors**
-  - **Subjectivity/bias**
-  - **Illustrative examples**
-  - **Misleading arguments**
+![Attack Techniques](images/figure3_attack_techniques.png)
 
 ---
 
 ### 🔹 **Results & Discussion – Key Findings**
+#### **1️⃣ Defense Performance Under Adaptive Attacks**
+- **All defenses were bypassed, with adaptive attack success rates exceeding 50%.**
+- **Fine-tuned detectors performed best but still failed under advanced attacks.**
+- **Paraphrasing and perplexity filtering provided limited resistance but were circumvented.**
 
-#### **1️⃣ Detection Accuracy**
-- **Fine-tuned models (SFT & DPO) outperformed vanilla models** in detecting adversarial prompts.
-- **Larger models (3B parameters) generalized better than 1B models** after fine-tuning.
+![Attack Success Rates](images/figure4_attack_success_rates.png)
 
-#### **2️⃣ Generated Explanations**
-- **Fine-tuned models provided better explanations** than vanilla models.
-- **Key observations:**
-  - Some explanations were **subjective or biased**.
-  - Some explanations **lacked illustrative examples**.
-  - A few explanations were **misleading** but rare.
+#### **2️⃣ Attack Impact Analysis**
+- **LLM agents trained with adversarial fine-tuning exhibited slightly better resistance.**
+- **Adaptive attacks significantly lowered detection rates of defenses.**
+- **Paraphrasing and sandwich prevention introduced noise but did not stop attacks.**
+
+![Detection Rate Changes](images/figure5_detection_rate_changes.png)
 
 ---
 
 ## **📌 Research Significance**
-
 ### **🔍 What problem does this paper solve?**
-- **Existing guardrails detect but do not explain prompt injection attacks.**
-- **LLMs can generate explanations**, aiding AI security investigations.
-- **Fine-tuning improves adversarial prompt detection and explanation accuracy.**
+- **Existing defenses fail against real-world adversarial threats.**
+- **This study highlights the critical need for adaptive attack resilience.**
 
 ### **🔍 Main Contribution:**
-✅ **Introduced an LLM-based prompt injection detection tool with generative explanations.**  
-✅ **Evaluated fine-tuning techniques (SFT, DPO, LoRA) to enhance detection performance.**  
-✅ **Conducted human evaluation of explanations to ensure reliability.**  
+✅ **Comprehensive evaluation of IPI defenses under adaptive attack settings.**  
+✅ **Demonstrates weaknesses in existing security measures for LLM agents.**  
+✅ **Provides insights into improving defenses against evolving threats.**  
 
 ### **🔍 How does this paper fit into Cybersecurity & AI research?**
-- **AI-Powered Penetration Testing**: Helps detect and analyze adversarial attacks on LLMs.
-- **Defensive AI Security**: Provides a tool for investigators to identify and respond to malicious prompts.
-- **Adversarial NLP Attacks**: Enhances understanding of prompt injection vulnerabilities.
+- **Penetration testing for AI models.**
+- **AI adversarial security analysis.**
+- **Improving LLM defenses in high-risk applications.**
 
 ---
 
 ## **📌 Next Steps & Future Work**
-- **Assessing LLMs for output censorship detection**.
-- **Improving explanation generation quality**.
-- **Expanding dataset diversity to enhance robustness**.
+- **Developing defenses resilient to adaptive attacks.**
+- **Investigating real-world applications where IPI attacks could cause significant damage.**
+- **Enhancing adversarial fine-tuning approaches for robustness.**
 
 ---
 
 ## **🔎 Key Takeaways**
-💡 **Fine-tuned LLMs improve prompt injection detection.**  
-💡 **LLMs can generate explanations to support AI security investigations.**  
-💡 **Future research should enhance output analysis and explanation clarity.**  
+💡 **Adaptive attacks remain a critical vulnerability in LLM security.**  
+💡 **Existing defenses are insufficient against real-world adversarial threats.**  
+💡 **Future security research must prioritize adaptive attack testing.**  
 
-This research has **practical applications** for **AI security teams**, **cyber threat analysts**, and **AI developers**, helping them understand and **combat prompt injection attacks effectively**. 🚀
+This research is essential for **AI security teams**, **LLM developers**, and **cyber threat analysts** working to **enhance AI robustness** against adversarial manipulations. 🚀
