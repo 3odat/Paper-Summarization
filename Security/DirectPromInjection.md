@@ -53,7 +53,9 @@
   - **LM-Judge Method:** Uses a secondary LLM for dependency reasoning.
   - **Attention-Based Approach:** Uses **saliency analysis** to filter relevant tool calls.
 
-![Figure 4: Distribution of Attention Scores](add image path here)
+![Figure 4: Illustration of Tool-Based Agent Systems and Their Security Risks](add image path here)
+
+![Figure 5: Distribution of Attention Scores](add image path here)
 
 ---
 
