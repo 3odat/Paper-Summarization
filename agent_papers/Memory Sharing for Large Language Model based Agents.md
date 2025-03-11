@@ -2,7 +2,7 @@
 
 The paper introduces the Memory-Sharing (MS) framework designed to enhance the in-context learning capabilities of Large Language Model (LLM)-based agents. By implementing a real-time memory storage and retrieval system, the framework allows agents to share and utilize collective experiences, thereby improving performance on open-ended tasks. Empirical evaluations across three distinct domains demonstrate the framework's effectiveness in generating responses that align more closely with user expectations.
 
-![Memory Sharing Framework](./Images/MS_Framework.png)
+![Memory Sharing Framework](../Images/MS_Framework.png)
 
 ## Research Motivation & Problem Statement
 
