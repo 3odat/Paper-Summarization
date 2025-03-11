@@ -2,6 +2,8 @@
 
 The paper introduces the Memory-Sharing (MS) framework designed to enhance the in-context learning capabilities of Large Language Model (LLM)-based agents. By implementing a real-time memory storage and retrieval system, the framework allows agents to share and utilize collective experiences, thereby improving performance on open-ended tasks. Empirical evaluations across three distinct domains demonstrate the framework's effectiveness in generating responses that align more closely with user expectations.
 
+![Memory Sharing Framework](Images/Agent_MS_Framework.png)
+
 ## Research Motivation & Problem Statement
 
 While LLM-based agents have shown proficiency in tasks with fixed answers, they often struggle with open-ended challenges due to limited example coverage and understanding. Traditional in-context learning methods may not provide the diversity and depth required for such tasks. The MS framework addresses these limitations by enabling agents to share memories, thereby enriching the pool of examples and enhancing their ability to tackle open-ended queries.
@@ -9,8 +11,6 @@ While LLM-based agents have shown proficiency in tasks with fixed answers, they 
 ## Methodology
 
 The MS framework conceptualizes each interaction between an agent and its input as a "Prompt-Answer" (PA) pair, which is stored in a shared memory pool accessible to all agents. The framework comprises two main components:
-
-![Alt Text](Images/Agen MS Framework.png/.jpg)
 
 ### Memory Storage
 Each PA pair undergoes evaluation by a Large Language Model (LLM) scorer to determine its suitability for inclusion in the memory pool. This process ensures the quality and relevance of stored memories.
@@ -64,4 +64,3 @@ The MS framework has practical implications in various domains:
 ## Conclusion
 
 The Memory-Sharing framework presents a significant advancement in enhancing the capabilities of LLM-based agents, particularly in addressing the challenges associated with open-ended tasks. By facilitating memory sharing and continuous learning, the framework paves the way for more intelligent and adaptable AI systems.
-
