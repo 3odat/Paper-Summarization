@@ -7,7 +7,7 @@
 ### ✅ **Abstract:**
 LLM agents leverage external tools to interact with environments, but this exposes them to **Indirect Prompt Injection (IPI) attacks**. While several defenses have been proposed to counteract these attacks, their **robustness is questionable against adaptive attacks**. This study evaluates eight defenses and systematically **bypasses all of them** using adaptive attack strategies, demonstrating a **success rate exceeding 50%**. The findings highlight the **need for rigorous adaptive attack testing** to ensure the reliability of defenses in real-world deployments.
 
-![Defenses vs. Adaptive Attacks](../Images/MS_Framework.png)
+![Defenses vs. Adaptive Attacks](../Images/Adaptive_Attacks.png)
 
 ### ✅ **Conclusion:**
 - **All tested defenses fail against adaptive attacks.**
