@@ -1,4 +1,4 @@
- # 📑 RTBAS - Defending LLM Agents Against Prompt Injection and Privacy Leakage
+# 📑 **Research Paper Review: RTBAS - Defending LLM Agents Against Prompt Injection and Privacy Leakage**
 
 ## **1️⃣ Paper Metadata**
 - **📌 Title:** RTBAS: Defending LLM Agents Against Prompt Injection and Privacy Leakage  
@@ -11,6 +11,8 @@
 ## **2️⃣ Abstract Summary (🔎 Quick Insight)**
 > **RTBAS (Robust Tool-Based Agent Systems) is a security framework for defending LLM-based agents against prompt injection attacks and privacy leaks.** By introducing **information flow control** and **dependency screening mechanisms**, RTBAS selectively executes tool calls while preserving system integrity. The approach utilizes **LM-Judge Screening** and **Attention-Based Screening** to detect and mitigate prompt injections. **Evaluation on the AgentDojo benchmark shows RTBAS prevents all targeted attacks with only 2% loss of task utility.**
 
+![Figure 1](add image path here)
+
 ---
 
 ## **3️⃣ Research Context & Motivation (🧐 Why It Matters?)**
@@ -20,6 +22,8 @@
   - **Prompt Injection Attacks:** Hijack LM behavior via **malicious prompt embedding**.
   - **Privacy Leaks in TBAS:** Sensitive information can **unintentionally propagate** through tool responses.
   - **Existing Defenses:** OpenAI’s GPTs enforce **manual confirmations**, which are inefficient and burdensome.
+
+![Figure 2](add image path here)
 
 ---
 
@@ -31,6 +35,8 @@
 ✅ **Selective Execution:** Automatically **blocks high-risk tool calls** while allowing safe interactions.  
 ✅ **Comprehensive Benchmarking:** Outperforms **existing methods** in real-world adversarial settings.
 
+![Figure 3](add image path here)
+
 ---
 
 ## **5️⃣ Methodology (🛠️ How Did They Do It?)**
@@ -38,7 +44,7 @@
   - **Selective Information Flow Control** prevents unauthorized information propagation.
   - **Taint Tracking Mechanism** flags tool calls based on integrity and confidentiality labels.
 - **🧪 Experimental Setup:**
-  - **Benchmark:** AgentDojo (simulating prompt injection attacks in banking, travel, workspace, and messaging tools). ![AgentDojo](https://arxiv.org/pdf/2502.08966#figure5)
+  - **Benchmark:** AgentDojo (simulating prompt injection attacks in banking, travel, workspace, and messaging tools).  
   - **Evaluation Metrics:**
     - **Edit Success (ES)**: Accuracy of LLM updates.
     - **Behavior Preservation (BP)**: Avoiding unwanted modifications.
@@ -47,6 +53,8 @@
   - **LM-Judge Method:** Uses a secondary LLM for dependency reasoning.
   - **Attention-Based Approach:** Uses **saliency analysis** to filter relevant tool calls.
 
+![Figure 4](add image path here)
+
 ---
 
 ## **6️⃣ Results & Analysis (📊 What Did They Find?)**
@@ -54,6 +62,8 @@
 - **🟢 100% Attack Prevention:** RTBAS **blocked all prompt injection attempts** that violated security policies.
 - **🔵 98% Task Utility Maintained:** Minimal disruption to normal agent operations.
 - **🟡 Low False Positives (FPR < 8%)**: RTBAS avoided excessive user confirmations.
+
+![Figure 5](add image path here)
 
 ### **📊 Figures & Tables:**
 | **Method** | **Integrity (↑)** | **Utility (↑)** | **False Positives (↓)** |
@@ -75,12 +85,16 @@
 ❌ **Computational Overhead:** Requires **additional model inference** for screening.  
 ❌ **Policy Sensitivity:** Effectiveness **depends on predefined security labels.**  
 
+![Figure 6](add image path here)
+
 ---
 
 ## **8️⃣ Real-World Applications (🌎 Impact & Use Cases)**
 - **🏢 Secure AI Assistants:** Prevents **malicious prompt hijacking** in **finance, healthcare, and enterprise LLM deployments**.
 - **🤖 Autonomous Agents:** Ensures safe **decision-making in AI-driven automation** (e.g., **automated banking, booking, or HR tools**).
 - **🔍 Privacy-Preserving AI:** Prevents **unintended information leakage** in chatbots, voice assistants, and enterprise AI platforms.
+
+![Figure 7](add image path here)
 
 ---
 
@@ -90,30 +104,6 @@
 - **Adapting the framework for AI-driven cyber defenses** against adversarial inputs.
 - **Exploring more efficient dependency screening techniques** to reduce computational cost.
 
----
-
-## **🔗 References & Further Reading**
-- **🔍 Original Paper:** [arXiv Preprint](https://arxiv.org/abs/2502.08966)
-- **📖 Related Work:**
-  - **AgentDojo (Debenedetti et al., 2024)**: A benchmark for adversarial LLM attacks.
-  - **LLM Security (Carlini et al., 2023)**: Studies prompt injections and jailbreaking techniques.
-  - **SERAC (Mitchell et al., 2022)**: Previous model editing method for security enhancements.
+![Figure 8](add image path here)
 
 ---
-
-## **🎯 Overall Rating (⭐️ Research Impact Score)**
-| **Category** | **Score (⭐️/5)** |
-|-------------|-----------------|
-| **🔹 Novelty** | ⭐⭐⭐⭐⭐ |
-| **🔹 Technical Rigor** | ⭐⭐⭐⭐ |
-| **🔹 Clarity & Presentation** | ⭐⭐⭐⭐ |
-| **🔹 Practical Usefulness** | ⭐⭐⭐⭐⭐ |
-
----
-
-# **📌 Why This Template Works?**
-✅ **Structured for Deep Understanding** – Covers key research aspects.  
-✅ **Visually Intuitive** – Figures, tables, and bullet points for clarity.  
-✅ **Encourages Critical Thinking** – Goes beyond summarization into analysis.  
-
-🚀 **Pro Tip:** Use **Notion, Obsidian, or Roam Research** to manage and compare paper summaries efficiently! 📚✨
