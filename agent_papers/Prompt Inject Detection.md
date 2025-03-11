@@ -25,7 +25,7 @@ The study finds that **fine-tuned LLMs** significantly improve the detection of 
 - This research explores using **text-generation LLMs** to **both detect** adversarial prompts and **generate explanations**, improving AI security investigations.
 
 ---
-![Alt Text](1.jpg)
+-![Alt Text](1.jpg)
 ### 🔹 **Methodology – How was this done?**
 
 #### **1️⃣ Dataset Selection**
