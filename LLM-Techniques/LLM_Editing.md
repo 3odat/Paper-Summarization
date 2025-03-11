@@ -43,7 +43,7 @@
   - **Datasets:** CounterFact, FEVER.
   - **Evaluation Metrics:** Edit Success (ES), Behavior Preservation (BP), Edit Quality (EQ).
   - **Baselines:** SERAC (Mitchell et al., 2022), MEND (Mitchell et al., 2022), ROME (Meng et al., 2022).
-
+![EREN Framework Methodology][../Images/LLMEditing.png]
 ---
 
 ## **6️⃣ Results & Analysis (📊 What Did They Find?)**
