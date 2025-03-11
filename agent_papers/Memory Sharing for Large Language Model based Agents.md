@@ -10,6 +10,8 @@ While LLM-based agents have shown proficiency in tasks with fixed answers, they 
 
 The MS framework conceptualizes each interaction between an agent and its input as a "Prompt-Answer" (PA) pair, which is stored in a shared memory pool accessible to all agents. The framework comprises two main components:
 
+![Alt Text](Images/Agen MS Framework.png/.jpg)
+
 ### Memory Storage
 Each PA pair undergoes evaluation by a Large Language Model (LLM) scorer to determine its suitability for inclusion in the memory pool. This process ensures the quality and relevance of stored memories.
 
