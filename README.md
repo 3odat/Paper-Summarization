@@ -30,4 +30,4 @@ Each paper will be placed in a **structured folder** based on its research domai
 │── 🎓 knowledge-distillation/
 │   ├── paper1-summary.md
 │── 📑 template.md  <-- Standard summary template
-│── README.md
+│── README.md 
