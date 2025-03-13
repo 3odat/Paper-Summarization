@@ -35,4 +35,4 @@ Each paper will be placed in a **structured folder** based on its research domai
 
 
 
-# Static template for each paper (soon) 
+## Static template for each paper (soon) 
