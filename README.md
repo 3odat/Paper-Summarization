@@ -16,7 +16,7 @@ Each paper will be placed in a **structured folder** based on its research domai
 ## 📂 Repository Structure  
 
 ```plaintext
-📚 literature-review/
+📚 Paper-Summarization/
 │── 🔐 security/
 │   ├── paper1-summary.md
 │   ├── paper2-summary.md
@@ -30,4 +30,27 @@ Each paper will be placed in a **structured folder** based on its research domai
 │── 🎓 knowledge-distillation/
 │   ├── paper1-summary.md
 │── 📑 template.md  <-- Standard summary template
-│── README.md 
+│── README.md
+
+
+
+
+# 📄 Paper Title  
+**📌 Citation:** Author(s), Conference/Journal, Year.  
+
+### 🔹 Key Contributions  
+- ✅ Contribution 1  
+- ✅ Contribution 2  
+- ✅ Contribution 3  
+
+### 🧠 Research Insights  
+- 🔍 Core methodology  
+- 📊 Experimental results  
+- 📌 Strengths & limitations  
+
+### 🚀 Future Research Directions  
+- 🔬 What this paper suggests for future work  
+- 🛠️ How it relates to our project  
+
+### 🔗 Reference  
+[Link to Paper](URL)  
