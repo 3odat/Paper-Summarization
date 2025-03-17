@@ -23,7 +23,7 @@
 > - **Injection Prompt Generation:** Constructing attack prompts using framework, separator, and disruptor components.
 > - **Feedback Refinement:** Iteratively optimizing injection success.
 
-![Figure 1: Methodology Overview](./figures/methodology.png)
+![Figure 1: Methodology Overview](image.png)
 
 ### **2.4 Key Findings**
 **What are the main results?**  
