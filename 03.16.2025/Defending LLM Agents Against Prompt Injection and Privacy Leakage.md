@@ -3,7 +3,6 @@
 **Title:** Defending LLM Agents Against Prompt Injection and Privacy Leakage  
 **Authors:** Peter Yong Zhong, Siyuan Chen, Ruiqi Wang, McKenna McCall, Ben L. Titzer, Heather Miller, Phillip B. Gibbons  
 **Publication Venue:** Carnegie Mellon University, Two Sigma Investments  
-**DOI / Link:** `[Insert Link Here]`  
 
 ---
 
