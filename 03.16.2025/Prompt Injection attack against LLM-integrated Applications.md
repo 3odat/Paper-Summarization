@@ -47,7 +47,7 @@ The study introduces **HOUYI**, a structured framework for black-box prompt inje
 3️⃣ **Feedback Phase:** The attack is iteratively refined by analyzing **LLM responses** and adjusting the injected prompts.
 
 📌 *Key Methodology Figure:*  
-![Figure X: HOUYI Attack Workflow](./figures/houyi_workflow.png)  
+![Figure X: HOUYI Attack Workflow](images/Workflow.png.png)  
 🔍 **Figure Explanation:** This figure illustrates the overall workflow of the **HOUYI attack strategy**, showing how an adversary systematically **infiltrates LLM-integrated applications** through context inference, prompt crafting, and refinement cycles. Each phase ensures optimal success rates across varying application architectures.
 
 ---
