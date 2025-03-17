@@ -1,4 +1,4 @@
-# 📄 Research Paper Summary & Critique
+# 📄 Prompt Injection Attack Against LLM-Integrated Applications
 
 ## 📝 Paper Information
 - **Title:** Prompt Injection Attack Against LLM-Integrated Applications  
