@@ -1,127 +1,139 @@
 # 📄 Research Paper Summary & Critique
 
 ## 📝 Paper Information
-- **Title:** Adversarial Attacks and Defenses in Large Language Models: Old and New Threats  
-- **Authors:** Leo Schwinn, David Dobre, Stephan Günnemann, Gauthier Gidel  
-- **Affiliations:** Technical University of Munich, Université de Montréal, Mila Quebec AI Institute, CIFAR AI Chair  
-- **Year of Publication:** 2023  
-- **Conference/Journal:** NeurIPS 2023 (ICBINB Workshop)  
-- **DOI/Link:** [arXiv:2306.15447](https://arxiv.org/abs/2306.15447)  
-- **Code Repository:** [GitHub](https://github.com/SchwinnL/LLM_Embedding_Attack)  
+- **Title:** A Comparative Survey of Attacks on Large Language Models  
+- **Authors:** Arijit Ghosh Chowdhury, Md Mofijul Islam, Vaibhav Kumar, Faysal Hossain Shezan, Vinija Jain, Aman Chadha  
+- **Affiliations:** University of Illinois Urbana-Champaign, Stanford University, Amazon GenAI, University of Texas at Arlington, UCLA, Georgia Institute of Technology  
+- **Year of Publication:** 2024  
+- **Conference/Journal:** Arxiv  
+- **DOI/Link:** [arXiv:2403.04786](https://arxiv.org/abs/2403.04786)  
 
 ---
 
 ## 📌 Abstract Summary
-This paper explores the **security risks of adversarial attacks** against **Large Language Models (LLMs)** and the **flaws in current defense evaluations**. The authors highlight that:
-- **Many defenses are overestimated** in robustness due to improper evaluations.
-- An **adversarial arms race** is emerging in **closed-source LLMs** (ChatGPT, Claude, Bard) and **open-source LLMs**.
-- **Embedding space attacks** are a **new threat model**, allowing adversaries to bypass filters and generate malicious outputs efficiently.
-- The study exposes how **certified defenses fail against advanced attacks**.
+This paper presents a **comprehensive survey** of **adversarial attacks** on **Large Language Models (LLMs)**, covering:
+- **Jailbreak attacks:** Techniques that bypass content restrictions.
+- **Prompt injection attacks:** Methods to manipulate LLM behavior.
+- **Data poisoning attacks:** Techniques that corrupt training data.
+- **Mitigation strategies:** A review of existing and emerging defense mechanisms.
+The study categorizes attack methodologies, evaluates their effectiveness, and highlights the evolving nature of **LLM security risks**.
 
 ---
 
 ## 🎯 Research Objectives & Problem Statement
 - **What problem does this paper address?**  
-  The **lack of robust defenses** against **adversarial attacks on LLMs**, leading to an **ongoing arms race** between attackers and defenders.
+  The **increasing security threats** against LLMs and the **lack of standardized defenses**.
 - **Why is this problem important?**  
-  Overconfidence in **faulty defenses** could lead to real-world **security breaches** and **malicious content generation**.
+  LLMs are being integrated into **critical applications**, making **security vulnerabilities highly impactful**.
 - **What are the key research questions?**  
-  1️⃣ Why do existing **defense evaluations fail** to provide true robustness?  
-  2️⃣ How effective are **embedding space attacks** in bypassing filters?  
-  3️⃣ Can adversarial attacks be **mitigated with stronger evaluation benchmarks**?
+  1️⃣ What are the **most common attack vectors** against LLMs?  
+  2️⃣ How do **white-box vs. black-box attacks** differ in their effectiveness?  
+  3️⃣ What defense strategies exist, and how effective are they?
 
 📌 *Key Excerpt from Paper:*  
-> "We showcase that embedding space attacks reduce the effort needed to generate harmful content and highlight the weaknesses in current robustness claims."
+> "The growing reliance on LLMs necessitates a deep understanding of adversarial threats to ensure their safe deployment."
 
 ---
 
 ## 🔬 Methodology
-### **1️⃣ Threat Model & Attack Strategies**
-- **Adversarial Attacks:** The study reviews **historical adversarial attacks** (e.g., FGSM, PGD) and their impact on LLMs.
-- **New Attack Model: Embedding Space Attacks**
-  - Attacks target **continuous token embeddings** instead of discrete token inputs.
-  - Enables **highly efficient** adversarial content generation with minimal effort.
-  - Demonstrates how **open-source models like LLaMA-2-7B** can be manipulated.
-- **Circumventing Certified Defenses:** The authors bypass **Kumar et al. (2023)**'s certified defense by removing harmful instructions while keeping adversarial attack sequences intact.
+### **1️⃣ Taxonomy of LLM Attacks**
+The paper introduces a **taxonomy** to categorize different types of attacks:
+- **Jailbreak Attacks:** Exploit model vulnerabilities to bypass safety restrictions.
+- **Prompt Injection Attacks:** Manipulate prompts to override system controls.
+- **Data Poisoning Attacks:** Introduce malicious data into model training.
 
-📌 *Key Methodology Figure:*  
-![Figure X: Embedding Attack Workflow](./figures/embedding_attack.png)  
-🔍 **Figure Explanation:** This figure illustrates how **embedding space attacks** differ from traditional discrete attacks by **modifying token embeddings** instead of actual text input.
+📌 *Key Taxonomy Figure:*  
+![Figure X: Taxonomy of LLM Attacks](./figures/llm_attack_taxonomy.png)  
+🔍 **Figure Explanation:** This taxonomy visually represents the attack types and their relationships, showing how adversarial threats to LLMs are interconnected.
+
+### **2️⃣ Attack Techniques & Case Studies**
+- **Jailbreak Attacks:**
+  - **PAIR (Prompt Automatic Iterative Refinement):** Uses an attacker LLM to optimize jailbreak queries.
+  - **DeepInception Attack:** Embeds adversarial triggers in queries.
+- **Prompt Injection Attacks:**
+  - **HOUYI Attack:** Black-box attack framework for prompt manipulation.
+  - **Propane:** Optimizes adversarial prompt structures.
+- **Data Poisoning Attacks:**
+  - **ProAttack:** High-efficiency poisoning strategy targeting training data.
+  - **Janus:** Fine-tuning attack for leaking personally identifiable information (PII).
+
+📌 *Key Attack Strategy Figure:*  
+![Figure Y: Attack Workflow](./figures/attack_workflow.png)  
+🔍 **Figure Explanation:** This figure outlines the steps involved in conducting **adversarial attacks**, highlighting the differences between white-box and black-box methodologies.
 
 ---
 
 ## 📊 Results & Findings
-- **Adversarial attacks remain highly effective** despite recent defense mechanisms.
-- **Embedding space attacks achieve 100% attack success rate** on **LLaMA-2-7B-chat**.
-- **Certified defenses fail** when evaluated against **properly structured attacks**.
-- **Black-box and transfer attacks** show **high success rates across different LLMs**.
+- **Jailbreak Attacks:**
+  - **PAIR achieves a 99% jailbreak success rate on GPT-4**.
+  - **Low-resource language attacks bypass filters** in multilingual LLMs.
+- **Prompt Injection Attacks:**
+  - **HOUYI achieves 86.1% success rate** across real-world applications.
+  - **Indirect prompt injections remain undetectable in API-based models**.
+- **Data Poisoning Attacks:**
+  - **Janus enables GPT-3.5 to leak PII at 70% success rate**.
+  - **ProAttack evades traditional fine-tuning defenses**.
 
 📌 *Key Results Figure:*  
-![Figure Y: Attack Success Rates](./figures/attack_success.png)  
-🔍 **Figure Explanation:** The results indicate that **embedding space attacks consistently bypass current defenses**, proving that modern LLMs remain vulnerable.
+![Figure Z: Attack Success Rates](./figures/attack_success.png)  
+🔍 **Figure Explanation:** Demonstrates the **effectiveness of different attacks** against major LLMs, emphasizing security weaknesses in commercial models.
 
 📌 *Key Excerpt from Paper:*  
-> "Embedding attacks achieve 100% trigger response rate with as few as 8.8 optimization steps on LLaMA-2-7B-chat."
+> "Attack methodologies are rapidly evolving, with novel prompt injection techniques now achieving near 100% bypass rates."
 
 ---
 
 ## 📢 Discussion & Analysis
 ### **1️⃣ Strengths**
-✅ Highlights **critical flaws in current adversarial defense evaluations**.  
-✅ Introduces **embedding space attacks**, a **new attack vector** for **LLMs**.  
-✅ Provides **concrete evidence** of the **ineffectiveness of certified defenses**.  
+✅ Comprehensive taxonomy of **LLM attack strategies**.  
+✅ Empirical **evaluation of attack success rates** on **multiple models**.  
+✅ Explores **real-world implications** of adversarial vulnerabilities.  
 
 ### **2️⃣ Weaknesses**
-⚠️ **No comprehensive mitigation strategy proposed**.  
-⚠️ **Limited analysis of real-world LLM APIs (ChatGPT, Bard, Claude)**.  
-⚠️ **Embedding attacks assume full access to model weights**, limiting applicability to **closed-source models**.
+⚠️ **No new defensive techniques proposed**—focus is on attack methods.  
+⚠️ **Limited analysis of closed-source models** (ChatGPT, Bard).  
+⚠️ **Overlooks ethical considerations** in adversarial AI testing.
 
 ---
 
 ## 📚 Related Work
-- **Adversarial Examples:** Originally introduced by **Szegedy et al. (2014)** and **Goodfellow et al. (2015)**.
-- **Transferability of Attacks:** Zou et al. (2023) show **adversarial attacks transfer from small models to GPT-4**.
-- **Certified Defenses:** Kumar et al. (2023) propose a **defense framework that fails against embedding attacks**.
+- **Adversarial Attacks in NLP:** FGSM, PGD, and adversarial prompt engineering.
+- **Backdoor Attacks on LLMs:** Data poisoning risks in fine-tuned models.
+- **LLM Defense Strategies:** Guardrails, adversarial training, and red-teaming.
 
 📌 *Key Comparative Figure:*  
-![Figure Z: Defense Bypass Rates](./figures/defense_bypass.png)  
-🔍 **Figure Explanation:** Demonstrates how **embedding space attacks** consistently bypass **certified defenses**, exposing their limitations.
+![Figure W: Attack vs. Defense](./figures/attack_vs_defense.png)  
+🔍 **Figure Explanation:** Highlights the **arms race** between adversarial attacks and evolving LLM defenses.
 
 ---
 
 ## 🏆 Relevance to Our Project
 | Criterion | Score (1-5) | Notes |
 |-----------|------------|-------|
-| **Relevance to AI Security/Agents** | 5 | Directly relevant to **LLM security research**. |
-| **Methodology aligns with our project?** | 4 | Embedding attacks could be applied to test **MiniSpec prompt robustness**. |
-| **Potential for real-world application?** | 5 | Shows **practical vulnerabilities** in AI-powered applications. |
-| **Availability of dataset/code?** | 4 | Public **GitHub repository available** for further experimentation. |
-| **Overall usefulness for our research?** | 5 | Highly relevant for **adversarial testing of LLM-based agents**. |
+| **Relevance to AI Security/Agents** | 5 | Directly relates to **LLM security research**. |
+| **Methodology aligns with our project?** | 5 | Provides insights into **MiniSpec prompt security testing**. |
+| **Potential for real-world application?** | 5 | Demonstrates practical **LLM vulnerabilities**. |
+| **Availability of dataset/code?** | 4 | No dataset, but **code is partially available**. |
+| **Overall usefulness for our research?** | 5 | Essential reference for **adversarial AI testing**. |
 
 📢 **Final Verdict:** ✅ **Highly Relevant**
 
 ---
 
 ## ✍️ Personal Takeaways
-- **Embedding space attacks are a major emerging threat** to open-source LLMs.
-- This study proves that **certified defenses fail against adversarially optimized inputs**.
-- The **lack of standardized defense benchmarks** means **new defenses could be flawed**.
+- **LLM security remains an ongoing challenge**, with adversaries continuously refining attack techniques.
+- **Prompt injection and data poisoning attacks are highly effective** and require **new mitigation strategies**.
+- **This paper reinforces the need for robust LLM security evaluations** before production deployment.
 
 📌 *Final Thoughts:*  
-> "This paper is a must-read for AI security researchers and provides valuable insights for strengthening defenses against adversarial LLM attacks."
+> "This survey provides a critical foundation for advancing adversarial research in AI security."
 
 ---
 
 ## 🛠️ Actionable Next Steps
 🔹 **Should we cite this paper in our research?** ✅ YES  
 🔹 **Should we explore its methodology further?** ✅ YES  
-🔹 **Should we replicate its experiments?** ✅ YES (Using LLaMA-2-7B)  
+🔹 **Should we replicate its experiments?** ✅ YES (For LLM security benchmarking)  
 🔹 **Potential researchers to contact for collaboration:** [Paper authors]
-
----
-
-## 📁 References & Additional Notes
-- **GitHub Repository for Experiments:** [LLM Embedding Attack](https://github.com/SchwinnL/LLM_Embedding_Attack)  
-- **Key Findings Applicable to Our Work:** Evaluation of **prompt robustness** and **LLM security**.
 
 ---
