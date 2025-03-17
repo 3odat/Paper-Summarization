@@ -12,6 +12,8 @@
 ## 📌 Abstract Summary
 This paper explores the **security vulnerabilities** of **LLM-integrated applications**, focusing on **prompt injection attacks**. The study introduces **HOUYI**, a novel **black-box prompt injection attack** inspired by web injection techniques (e.g., SQL injection, XSS). Through empirical testing on **36 real-world LLM applications**, the study finds that **31 applications** are vulnerable to **prompt injection**, including major vendors like **Notion**. The paper also discusses potential mitigation strategies but highlights that current defenses remain ineffective.
 
+![Figure 1: Overview of LLM-integrated Application Attacks](./figures/figure1.png)
+
 ---
 
 ## 🎯 Research Objectives & Problem Statement
@@ -26,6 +28,8 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 
 📌 *Key Excerpt from Paper:*  
 > "HOUYI achieves an **86.1% attack success rate** across 36 applications, revealing systemic vulnerabilities in commercial LLM services."
+
+![Figure 2: Threat Model and Injection Approach](./figures/figure2.png)
 
 ---
 
@@ -42,7 +46,7 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
   - **Disruptor Component:** Malicious payload execution.
 
 📌 *Key Methodology Figure:*  
-![Figure X: HOUYI Attack Workflow](./images/image.png)
+![Figure 3: HOUYI Attack Workflow](./figures/figure3.png)
 
 ---
 
@@ -55,7 +59,7 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 - **Affected platforms include major services** like Notion, Writesonic, and Parea AI.
 
 📌 *Key Results Figure:*  
-![Figure Y: Vulnerable Applications](./figures/vulnerable_apps.png)
+![Figure 4: Vulnerable Applications Breakdown](./figures/figure4.png)
 
 📌 *Key Excerpt from Paper:*  
 > "Prompt injection can cause financial losses of **millions of dollars** by enabling unauthorized LLM usage."
@@ -81,7 +85,7 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 - **LLM Security Risks:** Other studies have focused on **jailbreaking, data poisoning, and backdoor vulnerabilities**.
 
 📌 *Key Comparative Figure:*  
-![Figure Z: Attack Comparison](./figures/attack_comparison.png)
+![Figure 5: Comparison of Different Injection Techniques](./figures/figure5.png)
 
 ---
 
