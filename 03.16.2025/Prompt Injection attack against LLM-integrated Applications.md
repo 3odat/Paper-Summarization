@@ -5,7 +5,7 @@
 **Authors:** Yi Liu, Gelei Deng, Yuekang Li, Kailong Wang, Zihao Wang, Xiaofeng Wang, Tianwei Zhang, Yepang Liu, Haoyu Wang, Yan Zheng, Yang Liu  
 **Publication Venue:** ArXiv  
 **Year:** 2024  
-**DOI/URL:** arXiv:2306.05499v2  
+
 
 ---
 ## 2️⃣ Summary
@@ -23,7 +23,7 @@
 > - **Injection Prompt Generation:** Constructing attack prompts using framework, separator, and disruptor components.
 > - **Feedback Refinement:** Iteratively optimizing injection success.
 
-![Figure 1: Methodology Overview](image.png)
+![Figure 1: Methodology Overview](images/image.png)
 
 ### **2.4 Key Findings**
 **What are the main results?**  
