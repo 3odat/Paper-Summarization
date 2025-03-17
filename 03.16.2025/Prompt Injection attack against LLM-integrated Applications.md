@@ -42,7 +42,7 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
   - **Disruptor Component:** Malicious payload execution.
 
 📌 *Key Methodology Figure:*  
-![Figure X: HOUYI Attack Workflow](./figures/houyi_workflow.png)
+![Figure X: HOUYI Attack Workflow](./images/image.png)
 
 ---
 
