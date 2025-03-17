@@ -1,4 +1,4 @@
-# 📄 Research Paper Summary & Critique
+# 📄 A Comparative Survey of Attacks on Large Language Models
 
 ## 📝 Paper Information
 - **Title:** A Comparative Survey of Attacks on Large Language Models  
