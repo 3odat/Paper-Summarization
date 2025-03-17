@@ -12,8 +12,6 @@
 ## 📌 Abstract Summary
 This paper explores the **security vulnerabilities** of **LLM-integrated applications**, focusing on **prompt injection attacks**. The study introduces **HOUYI**, a novel **black-box prompt injection attack** inspired by web injection techniques (e.g., SQL injection, XSS). Through empirical testing on **36 real-world LLM applications**, the study finds that **31 applications** are vulnerable to **prompt injection**, including major vendors like **Notion**. The paper also discusses potential mitigation strategies but highlights that current defenses remain ineffective.
 
-![Figure 1: Overview of LLM-integrated Application Attacks](./figures/figure1.png)
-
 ---
 
 ## 🎯 Research Objectives & Problem Statement
@@ -29,8 +27,6 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 📌 *Key Excerpt from Paper:*  
 > "HOUYI achieves an **86.1% attack success rate** across 36 applications, revealing systemic vulnerabilities in commercial LLM services."
 
-![Figure 2: Threat Model and Injection Approach](./figures/figure2.png)
-
 ---
 
 ## 🔬 Methodology
@@ -40,13 +36,19 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 - **Metrics:** Success rate, response analysis, impact assessment.
 
 ### **2️⃣ Techniques & Algorithms**
-- **HOUYI Attack Framework:** 
-  - **Framework Component:** Embeds a pre-constructed prompt.
-  - **Separator Component:** Context partitioning for effective injection.
-  - **Disruptor Component:** Malicious payload execution.
+The study introduces **HOUYI**, a structured framework for black-box prompt injection, inspired by **traditional web injection attacks** like **SQL injection and XSS**. The methodology follows a **three-phase process**:
+
+#### **HOUYI Attack Framework**
+1️⃣ **Context Inference Phase:** The attacker **interacts with the target LLM application** to infer internal prompt structures and behavior.
+2️⃣ **Payload Generation Phase:** The attack is formulated using three components:
+   - **Framework Component:** A pre-constructed prompt that blends with the application's normal operation.
+   - **Separator Component:** A crafted input to isolate malicious instructions from original prompts.
+   - **Disruptor Component:** The actual payload designed to override existing system instructions.
+3️⃣ **Feedback Phase:** The attack is iteratively refined by analyzing **LLM responses** and adjusting the injected prompts.
 
 📌 *Key Methodology Figure:*  
-![Figure 3: HOUYI Attack Workflow](./figures/figure3.png)
+![Figure X: HOUYI Attack Workflow](./figures/houyi_workflow.png)  
+🔍 **Figure Explanation:** This figure illustrates the overall workflow of the **HOUYI attack strategy**, showing how an adversary systematically **infiltrates LLM-integrated applications** through context inference, prompt crafting, and refinement cycles. Each phase ensures optimal success rates across varying application architectures.
 
 ---
 
@@ -59,7 +61,8 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 - **Affected platforms include major services** like Notion, Writesonic, and Parea AI.
 
 📌 *Key Results Figure:*  
-![Figure 4: Vulnerable Applications Breakdown](./figures/figure4.png)
+![Figure Y: Vulnerable Applications](./figures/vulnerable_apps.png)  
+🔍 **Figure Explanation:** This table presents the real-world impact of prompt injection attacks across multiple **LLM-integrated applications**, emphasizing the widespread security risks affecting AI-powered services.
 
 📌 *Key Excerpt from Paper:*  
 > "Prompt injection can cause financial losses of **millions of dollars** by enabling unauthorized LLM usage."
@@ -85,7 +88,8 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 - **LLM Security Risks:** Other studies have focused on **jailbreaking, data poisoning, and backdoor vulnerabilities**.
 
 📌 *Key Comparative Figure:*  
-![Figure 5: Comparison of Different Injection Techniques](./figures/figure5.png)
+![Figure Z: Attack Comparison](./figures/attack_comparison.png)  
+🔍 **Figure Explanation:** This figure compares different **prompt injection methodologies**, showing how **HOUYI** achieves a **higher success rate** than traditional attacks due to its **structured, iterative refinement approach**.
 
 ---
 
@@ -109,19 +113,5 @@ This paper explores the **security vulnerabilities** of **LLM-integrated applica
 
 📌 *Final Thoughts:*  
 > "This paper provides valuable insights for securing AI-driven applications, making it highly relevant to our **LLM-Powered MiniSpec Code Generation** project."
-
----
-
-## 🛠️ Actionable Next Steps
-🔹 **Should we cite this paper in our research?** ✅ YES  
-🔹 **Should we explore its methodology further?** ✅ YES  
-🔹 **Should we replicate its experiments?** ⚠️ PARTIALLY (Security concerns)  
-🔹 **Potential researchers to contact for collaboration:** [Paper authors]
-
----
-
-## 📁 References & Additional Notes
-- **HOUYI Attack Toolkit:** Not publicly available.
-- **Dataset Availability:** No official dataset provided.
 
 ---
