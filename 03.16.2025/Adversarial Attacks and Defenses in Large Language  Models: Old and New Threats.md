@@ -43,7 +43,7 @@ The paper introduces a **taxonomy** to categorize different types of attacks:
 - **Data Poisoning Attacks:** Introduce malicious data into model training.
 
 📌 *Key Taxonomy Figure:*  
-![Figure X: Taxonomy of LLM Attacks](./figures/llm_attack_taxonomy.png)  
+![Figure X: Taxonomy of LLM Attacks](images/image.png)  
 🔍 **Figure Explanation:** This taxonomy visually represents the attack types and their relationships, showing how adversarial threats to LLMs are interconnected.
 
 ### **2️⃣ Attack Techniques & Case Studies**
