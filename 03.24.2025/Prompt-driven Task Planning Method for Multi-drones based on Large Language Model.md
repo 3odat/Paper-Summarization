@@ -27,13 +27,20 @@ This paper introduces a novel prompt-driven control framework using Large Langua
 
 ---
 ## Figures
-
+ 
 
 ![Framework Architicture](figures/1.png)
 
-![The User Prompt](figures/2.png)
+## PROMPT ENGINEERING
+
+#### System Prompt
+![The System Prompt](figures/2.png)
+
+#### System Prompt
 
 ![The User Prompt](figures/3.png)
+
+
 
 ![The User Prompt](figures/4.png)
 
