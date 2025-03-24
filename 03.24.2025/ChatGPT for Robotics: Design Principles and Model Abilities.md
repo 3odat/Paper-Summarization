@@ -29,10 +29,14 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
 ---
 ## Figures
 
-![Figures - 1 ](figures/1.jpg)
+![Figures - 1 - General Archeticture](figures/1.jpg)
 
 ---
-![Figures - 2 ](figures/2.jpg)
+![Figures - 2 Archeticture with User ](figures/2.jpg)
+
+---
+![Figures - 3 Using GPT ](figures/3.jpg)
+
 
 
 ## 4️⃣ Key Contributions (🚀 What’s New & Valuable?)
