@@ -104,3 +104,9 @@ locate_object("bowl")
 go_to_location("bowl")
 pick_up("eggs")
 use_item("stove")
+```
+### ✅ Structured Output with Tags
+```
+<command>move_to_location("sofa")</command>
+<reason>To reach the destination object as requested</reason>
+```
