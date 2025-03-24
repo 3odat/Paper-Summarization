@@ -27,7 +27,7 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
   Builds upon zero-shot planning work (e.g., SayCan, Code-as-Policies), language-based robotic interaction, and vision-language models, but stands out through its **dialog-based correction**, multi-domain scope, and emphasis on **open-loop vs closed-loop reasoning**.
 
 ---
-![Alt Text](/figures/1.jpg)
+![Figure 1](/figures/1.jpg)
 
 
 
