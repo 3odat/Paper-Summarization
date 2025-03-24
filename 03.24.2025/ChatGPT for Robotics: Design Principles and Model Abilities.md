@@ -31,9 +31,8 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
 
 ![Figures - 1 - General Archeticture](figures/1.jpg)
 
-```
-Current robotics pipelines begin with an engineer or technical user that needs to translate the task’s requirements into code for the system. The engineer sits in the loop, meaning that they need to write new code and specifications to correct the robot’s behavior. Overall, this process is slow (user needs to write low-level code), expensive (requires highly skilled users with deep knowledge of robotics), and inefficient (requires multiple interactions to get things working properly).
-```
+##### Current robotics pipelines begin with an engineer or technical user that needs to translate the task’s requirements into code for the system. The engineer sits in the loop, meaning that they need to write new code and specifications to correct the robot’s behavior. Overall, this process is slow (user needs to write low-level code), expensive (requires highly skilled users with deep knowledge of robotics), and inefficient (requires multiple interactions to get things working properly).
+
 
 ---
 ![Figures - 2 Archeticture with User ](figures/2.jpg)
