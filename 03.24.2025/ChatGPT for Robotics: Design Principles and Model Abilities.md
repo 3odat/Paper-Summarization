@@ -27,7 +27,11 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
   Builds upon zero-shot planning work (e.g., SayCan, Code-as-Policies), language-based robotic interaction, and vision-language models, but stands out through its **dialog-based correction**, multi-domain scope, and emphasis on **open-loop vs closed-loop reasoning**.
 
 ---
+![Alt Text](/figures/1.jpg)
 
+
+
+![Alt Text](/figures/2.jpg)
 ## 4️⃣ Key Contributions (🚀 What’s New & Valuable?)
 
 - ✅ **Proposed a generalizable framework** for integrating ChatGPT into robotics pipelines using prompt engineering + high-level APIs.
