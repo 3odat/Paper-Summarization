@@ -38,7 +38,7 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
 ![Figures - 2 Archeticture with User ](figures/2.jpg)
 
 ---
-![Figures - 3 Using GPT ](figures/3.jpg)
+![Figures - 3 Robotics with ChatGPT: design principles  ](figures/3.jpg)
 
 
 
