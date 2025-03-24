@@ -29,7 +29,7 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
 ---
 ## Figures
 
-#### Challenges in robotics today
+### 1 -  Challenges in robotics today
 
 ![Figures - 1 - General Archeticture](figures/1.jpg)
 
@@ -37,7 +37,7 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
 
 
 ---
-#### Robotics with ChatGPT: design principles
+### 2- Robotics with ChatGPT: design principles
 ![Figures - 2 Archeticture with User ](figures/2.jpg)
 
 ---
