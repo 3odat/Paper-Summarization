@@ -26,6 +26,17 @@ This paper introduces a novel prompt-driven control framework using Large Langua
   Extends previous efforts in LLMs for robotic arms and language-conditioned control (e.g., Code-as-Policies, SayCan) to the drone domain—particularly underexplored for multi-drone orchestration.
 
 ---
+## Figures
+
+
+![Framework Architicture](figures/1.png)
+
+![The User Prompt](figures/2.png)
+
+![The User Prompt](figures/3.png)
+
+![The User Prompt](figures/4.png)
+
 
 ## 4️⃣ Key Contributions (🚀 What’s New & Valuable?)
 
