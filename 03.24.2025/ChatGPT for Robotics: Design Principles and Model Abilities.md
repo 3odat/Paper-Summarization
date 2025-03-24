@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2f4b666e-8cb3-4d06-a779-7a7ce4271121)# 📑 Research Paper Review
+# 📑 Research Paper Review
 
 ## 1️⃣ Paper Metadata
 - **📌 Title:** ChatGPT for Robotics: Design Principles and Model Abilities  
@@ -27,11 +27,11 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
   Builds upon zero-shot planning work (e.g., SayCan, Code-as-Policies), language-based robotic interaction, and vision-language models, but stands out through its **dialog-based correction**, multi-domain scope, and emphasis on **open-loop vs closed-loop reasoning**.
 
 ---
-![Figure 1](figures/1.jpg)
+
+![Figures](/figures/1.jpg)
 
 
 
-![Alt Text](/figures/2.jpg)
 ## 4️⃣ Key Contributions (🚀 What’s New & Valuable?)
 
 - ✅ **Proposed a generalizable framework** for integrating ChatGPT into robotics pipelines using prompt engineering + high-level APIs.
