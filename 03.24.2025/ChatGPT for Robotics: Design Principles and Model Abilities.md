@@ -28,7 +28,7 @@ This paper explores the adaptation of ChatGPT for use in robotics by combining h
 
 ---
 
-![Figures](/figures/1.jpg)
+![Figures](figures/1.jpg)
 
 
 
