@@ -1,64 +1,66 @@
 # Ibrahim Odat  
-**PhD Candidate | Cybersecurity Engineer | AI & Autonomous Systems Researcher**  
+**PhD Candidate | Cybersecurity Engineer | AI + Autonomous Systems Security Expert**  
 📍 Michigan, USA | 📞 (248) 237‑5426 | 📧 ibrahimodatt@gmail.com  
 🌐 3odat.github.io | 🔗 linkedin.com/in/ibrahim-odat  
 
 ---
 
-## Professional Summary  
-Cybersecurity professional with 3+ years of experience in offensive security, AI-driven threat detection, and penetration testing across autonomous and embedded systems. Proven expertise in vulnerability assessments, SIEM/IDS optimization, secure SDLC integration, and UAV security. PhD candidate focused on AI-integrated security for autonomous systems with published research in machine learning-based threat mitigation. Strong foundation in Python, ROS2, PX4, and cloud security practices.
+## PROFESSIONAL SUMMARY  
+Cybersecurity engineer and AI researcher with 3+ years of experience securing autonomous systems, embedded platforms, and cloud-native architectures. Specialized in offensive security, penetration testing, and threat detection using advanced ML/LLM models. Currently pursuing a PhD focused on securing UAVs with AI-driven automation. Proven success in high-impact roles across academia and industry, with Black Hat presentation and multiple certifications. Seeking senior-level security engineering or AI R&D positions in aerospace, defense, or enterprise cybersecurity.
 
 ---
 
-## Core Competencies  
-- **Offensive Security & Threat Detection:** Penetration Testing, Vulnerability Scanning, MITRE ATT&CK, OWASP Top 10  
-- **AI & Autonomous Systems:** LLM Fine-Tuning, Prompt Engineering, Autonomous UAV Systems, YOLOv8, LangChain  
-- **Security Tools:** Kali Linux, Metasploit, Wireshark, Nessus, Burp Suite, Nmap  
-- **Programming:** Python, Bash, SQL, Flask, REST APIs  
-- **Cloud & Identity Management:** AWS Security, Active Directory, Okta, MFA, Zero Trust  
-- **Frameworks & Compliance:** NIST 800-171, ISO 27001, PCI-DSS  
+## CORE SKILLS & TOOLS  
+
+**Security & Compliance:** Penetration Testing, Red Teaming, Vulnerability Scanning, MITRE ATT&CK, OWASP Top 10, NIST 800-171, Zero Trust Architecture, PCI-DSS  
+**AI & Autonomous Systems:** LLM Fine-Tuning, Prompt Engineering, YOLOv8, LangChain, Ollama, LangGraph, ROS2, PX4 Autopilot  
+**Tools & Platforms:** Kali Linux, Burp Suite, Metasploit, Nessus, Wireshark, Nmap, SIEM, IDS/IPS, VPN, Docker  
+**Programming & APIs:** Python, Bash, SQL, Flask, FastAPI, REST APIs  
+**Cloud & IAM:** AWS Security, Active Directory, Okta, MFA, Fortinet  
+**Reporting & SDLC:** Risk Mitigation, Secure Software Lifecycle, Technical Report Writing, DevSecOps  
 
 ---
 
-## Professional Experience  
+## PROFESSIONAL EXPERIENCE  
 
-### **Cybersecurity Researcher**  
+### Cybersecurity Researcher  
 **Oakland University | Jan 2022 – Present**  
-- Led penetration tests on PX4 Autopilot systems uncovering buffer overflows, session hijacks, and MAVLink exploits, increasing security resilience by 80%  
-- Automated threat detection pipelines using LLM fine-tuning and prompt engineering; reduced analysis time by 60%  
-- Conducted firmware vulnerability assessments on Foscam IoT cameras; mitigated unauthorized access risk by 90%  
-- Simulated MITM and brute-force attacks to harden encryption protocols and refine IDS configurations  
+- Led red team assessments on PX4 Autopilot, identifying memory exploits and session hijacks; increased system resilience by 80%  
+- Designed LLM-based threat detection pipelines using Ollama, prompt engineering, and anomaly detection; reduced manual effort by 60%  
+- Discovered and patched firmware-level IoT vulnerabilities in Foscam cameras, mitigating 90% of unauthorized access vectors  
+- Simulated brute-force and MITM attacks to validate encryption and strengthen incident response protocols  
 
-### **Cybersecurity Specialist**  
+### Cybersecurity Specialist  
 **ZADD | Jan 2021 – Jan 2022**  
-- Secured Active Directory environments with remote desktop hardening and user access control  
-- Integrated AI-based security into translation platforms; reduced false-positive alerts by 35%  
-- Performed 120+ Nessus vulnerability scans ensuring NIST 800-171 compliance  
-- Managed security stack: IDS/IPS, VPN, DLP, Firewalls, and SIEM platforms  
+- Hardened Active Directory and TSplus remote desktop environments; blocked lateral movement vectors and improved domain security  
+- Integrated AI-based alert classifiers into enterprise systems, cutting false positives by 35%  
+- Ran 120+ Nessus scans for regulatory compliance (NIST 800-171), achieving clean audit scores across systems  
+- Managed layered security infrastructure: Firewalls, DLP, IDS/IPS, VPN, SIEM  
 
-### **Penetration Tester**  
+### Penetration Tester  
 **Futuretec Security Solutions | Jan 2020 – Jan 2021**  
-- Executed 200+ Web and API pentests using Burp Suite and SQLMap; uncovered critical SQLi and auth bypasses  
-- Resolved OWASP Top 10 issues and maintained PCI-DSS & ISO 27001 compliance across projects  
-- Developed Python-based automation scripts to streamline testing and reduce manual effort by 50%  
-- Delivered technical reports to C-level leadership with actionable risk remediation steps  
+- Conducted 200+ application and API pentests (Burp Suite, SQLMap), uncovering critical injection and auth bypass flaws  
+- Resolved OWASP Top 10 risks for major clients, ensuring PCI-DSS and ISO 27001 compliance  
+- Built custom Python testing frameworks to automate discovery and reporting; cut manual cycles by 50%  
+- Collaborated with DevOps teams to embed security into SDLC; accelerated secure release cycles  
 
 ---
 
-## Projects  
-- **PX4 Autopilot Session Hijack:** Exploited and mitigated session hijacking on PX4 systems using MAVSDK & Python  
-- **Foscam Camera Exploits:** Presented at Black Hat Arsenal; disclosed memory corruption and authentication flaws  
-- **Multi-Agent UAV Framework:** Built peer-to-peer drone coordination with LangGraph & WebSockets  
-- **Traffic Surveillance Simulation:** Integrated ROS2 and Gazebo for highway traffic UAV simulations  
-- **YOLOv8 Detection Pipeline:** Achieved >95% object detection accuracy in drone simulations using Jetson Nano  
+## PROJECTS  
+
+- **PX4 Hijack Exploit:** Elevated privileges via session hijacking in PX4 systems; proposed secure MAVLink protocol patches  
+- **Foscam Camera Vulnerabilities:** Presented at Black Hat Arsenal; discovered auth bypass and memory exploits  
+- **Multi-Agent UAV Framework:** Built drone-to-drone coordination using LangGraph, WebSockets, and FastAPI  
+- **ROS2 + Gazebo Traffic Sim:** Simulated pedestrian/vehicle scenarios for UAV surveillance training  
+- **YOLOv8 Vision Pipeline:** Achieved 95%+ detection accuracy on autonomous drone datasets with ROS2 + Jetson Nano  
 
 ---
 
-## Education  
+## EDUCATION  
 
-**Ph.D. in Computer Science & Informatics**  
+**PhD in Computer Science & Informatics**  
 Oakland University – Expected Dec 2028  
-*Focus: Securing Autonomous Systems through AI Integration*
+*Research: AI-augmented security for autonomous UAV systems*
 
 **M.S. in Cybersecurity**  
 Oakland University – Dec 2023 | GPA: 4.0/4.0  
@@ -66,7 +68,8 @@ Oakland University – Dec 2023 | GPA: 4.0/4.0
 
 ---
 
-## Certifications  
-- Certified Ethical Hacker (CEH) – EC-Council, 2023  
-- eLearnSecurity Junior Penetration Tester (eJPT) – INE, 2022  
-- Fortinet NSE 1 & NSE 2 – Fortinet, 2021  
+## CERTIFICATIONS  
+
+- **Certified Ethical Hacker (CEH)** – EC-Council, 2023  
+- **eLearnSecurity Junior Penetration Tester (eJPT)** – INE, 2022  
+- **Fortinet NSE 1 & NSE 2** – Fortinet, 2021  
